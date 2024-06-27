@@ -1,0 +1,33 @@
+2024-04-25 17:48:51,974 INFO [main] c.e.B.BackendAmongUsApplication [StartupInfoLogger.java:50] Starting BackendAmongUsApplication using Java 21.0.2 with PID 16108 (C:\Users\Erik\Documents\GitHub\AmongUs-Main\BackendAmongUs\target\classes started by Erik in C:\Users\Erik\Documents\GitHub\AmongUs-Main\BackendAmongUs)
+2024-04-25 17:48:51,979 INFO [main] c.e.B.BackendAmongUsApplication [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-25 17:48:53,014 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:139] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-25 17:48:53,045 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+2024-04-25 17:48:53,857 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 8080 (http)
+2024-04-25 17:48:53,885 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-25 17:48:53,889 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-04-25 17:48:53,889 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-25 17:48:54,010 INFO [main] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-04-25 17:48:54,012 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1958 ms
+2024-04-25 17:48:54,389 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-25 17:48:54,489 INFO [main] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-25 17:48:54,529 INFO [main] o.h.c.i.RegionFactoryInitiator [RegionFactoryInitiator.java:50] HHH000026: Second-level cache disabled
+2024-04-25 17:48:54,810 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-25 17:48:54,833 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-25 17:48:55,812 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2aa6bbad
+2024-04-25 17:48:55,814 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-25 17:48:55,894 WARN [main] o.h.o.deprecation [DialectFactoryImpl.java:153] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-25 17:48:56,351 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:58] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-25 17:48:56,358 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-25 17:48:57,066 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:232] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-25 17:48:58,283 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-25 17:48:58,319 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 8080 (http) with context path ''
+2024-04-25 17:48:58,322 INFO [main] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] Starting...
+2024-04-25 17:48:58,326 INFO [main] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@fcd3a6f]]
+2024-04-25 17:48:58,327 INFO [main] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] Started.
+2024-04-25 17:48:58,341 INFO [main] c.e.B.BackendAmongUsApplication [StartupInfoLogger.java:56] Started BackendAmongUsApplication in 6.877 seconds (process running for 7.551)
+2024-04-25 17:49:02,630 INFO [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] Stopping...
+2024-04-25 17:49:02,630 INFO [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@fcd3a6f]]
+2024-04-25 17:49:02,631 INFO [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler [CompositeLog.java:117] Stopped.
+2024-04-25 17:49:02,642 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-25 17:49:02,645 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-25 17:49:03,099 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
