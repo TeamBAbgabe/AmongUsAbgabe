@@ -1,0 +1,42 @@
+.result-message {
+    position: absolute; /* Absolute positioning within the result-overlay container */
+    top: 10px; /* Positioned close to the top */
+    width: 100%;
+    text-align: center;
+    font-family: 'Creepster', cursive; /* Fun, thematic font */
+    color: #ff0000; /* Highly visible red color */
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: /* Multi-layered shadow for a spooky effect */
+      3px 3px 0 rgba(100, 0, 0, 0.5),
+      5px 5px 0 rgba(200, 0, 0, 0.4),
+      7px 7px 0 rgba(255, 0, 0, 0.3),
+      10px 10px 20px rgba(200, 0, 0, 0.5),
+      13px 13px 20px rgba(255, 0, 0, 0.5);
+    opacity: 1; /* Full visibility */
+    z-index: 1001; /* Above the image */
+}
+
+.result-overlay {
+    position: fixed; /* Covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.8); /* Optional: dark background for better visibility */
+    overflow: hidden;
+    z-index: 1000; /* Under the message */
+}
+
+.result-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Below the message */
+}

@@ -1,0 +1,45 @@
+.info-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Prevents scrolling on the modal background */
+    padding: 20px; /* Adds padding around the internal content container */
+}
+
+.close-info-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.info-content {
+    text-align: center;
+    width: 80%; /* Adjust width as needed */
+    max-height: 90vh; /* Limits height to 90% of the viewport height */
+    overflow-y: auto; /* Enables vertical scrolling within the content area */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background: #f9f9f9;
+    border-radius: 10px;
+    position: relative; /* Ensures the content area is correctly positioned within the flex container */
+}
+
+.info-content img {
+    width: 100%;
+    max-width: 300px; /* Ensures all images are the same size */
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

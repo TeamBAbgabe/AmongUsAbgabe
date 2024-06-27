@@ -1,0 +1,36 @@
+/* Add this to your CSS file */
+.notification {
+    position: fixed;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    animation: slideDown 2s forwards, slideUp 2s 3s forwards;
+    z-index: 15000; /* Ensure it is above other elements */
+    opacity: 0; /* Default state */
+}
+
+@keyframes slideDown {
+    0% {
+      top: -50px;
+      opacity: 0;
+    }
+    100% {
+      top: 10px;
+      opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+      top: 10px;
+      opacity: 1;
+    }
+    100% {
+      top: -50px;
+      opacity: 0;
+    }
+}

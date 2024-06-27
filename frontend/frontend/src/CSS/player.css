@@ -1,0 +1,36 @@
+.fixedContainer {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    padding: 5px;
+    z-index: 100;
+  }
+  
+  .flexContainer {
+    display: flex;
+    flex-direction: column;  /* Corrected from flexDirection */
+    align-items: center;     /* Corrected from alignItems */
+  }
+  
+  .userAvatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;      /* Corrected from borderRadius */
+    object-fit: cover;       /* Corrected from objectFit */
+  }
+  
+  .userName {
+    font-weight: 900;        /* Corrected from fontWeight */
+    text-align: center;      /* Corrected from textAlign */
+    color: var(--user-color);
+    margin-top: 8px;
+    margin-bottom: 0px;
+  }
+  
+  .userRole {
+    font-weight: 1000;       /* Corrected from fontWeight */
+    text-align: center;      /* Corrected from textAlign */
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  

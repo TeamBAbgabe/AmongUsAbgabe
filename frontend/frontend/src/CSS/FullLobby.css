@@ -1,0 +1,51 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;  /* Make width auto to fit content */
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 15px 30px;  /* Increased padding for a larger button */
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;  /* Larger font size for better readability */
+    transition: background-color 0.3s;
+    width: auto;  /* Adjust width as needed, or use 'auto' for automatic width based on content */
+  }
+  
+  .close-button:hover {
+    background-color: #cc0000;
+  }
+  
+  
+  .loading-gif {
+    margin: 20px 0;
+    width: 150px;  /* Increase the size of the GIF */
+  }
+  
+  h1 {
+    font-size: 24px; /* Ensure the title font size is appropriate */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the text spans the full width of the modal */
+  }
+  

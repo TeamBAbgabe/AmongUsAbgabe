@@ -1,0 +1,97 @@
+/* General Styles */
+.voting-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 70000; /* Ensures it's above other content */
+}
+
+.voting-container {
+  background-color: #f4f4f8;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Creepster', cursive;
+    color: #ff0000;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-shadow:
+      3px 3px 0 rgba(100, 0, 0, 0.5),
+      5px 5px 0 rgba(200, 0, 0, 0.4),
+      7px 7px 0 rgba(255, 0, 0, 0.3),
+      10px 20px 20px rgba(200, 0, 0, 0.5), /* Larger shadow for a deeper effect */
+      13px 23px 20px rgba(255, 0, 0, 0.5); /* Even larger shadow for additional depth */
+    position: relative; /* For pseudo-element positioning */
+    margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.vote-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.vote-item:hover {
+  background-color: #e9e9ff;
+}
+
+.vote-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ddd; /* Optional: adds a border around the avatar */
+}
+
+.username {
+  font-size: 1.1em;
+
+  flex-grow: 1; /* Ensures text takes up remaining space */
+  text-align: left; /* Aligns the username to the left */
+  cursor: pointer;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Chat related styles (if any specific needed) */

@@ -1,0 +1,78 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10050;
+}
+
+.settings-modal {
+  background-color: rgba(255, 255, 255, 0.82);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings-interior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings-item {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.label-and-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.music-label {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto; /* Allows label to maintain size based on content */
+}
+
+.checkbox-container {
+  flex-grow: 1; /* Allows the checkbox container to fill the space */
+  display: flex;
+  justify-content: center; /* Centers checkbox within the container */
+  align-items: center;
+}
+
+.settings-slider {
+  width: 70%; /* Adjust as needed */
+  margin-left: 10px; /* Space between the label and the slider */
+}
+
+.settings-close-btn {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.settings-close-btn:hover {
+  background-color: darkred;
+}

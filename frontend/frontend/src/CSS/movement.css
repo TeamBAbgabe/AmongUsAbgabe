@@ -1,0 +1,79 @@
+/* MovementStyles.css */
+
+.escape-box {
+    width: 400px; /* Slightly larger for better readability */
+    height: 250px; /* Adjusted height */
+    background-color: #c4c4c4; /* Lighter shade for better visibility */
+    border: 2px solid #333; /* Add border for definition */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px; /* Smoothed corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow for 3D effect */
+    padding: 20px; /* Inner spacing */
+    box-sizing: border-box; /* Include padding and border in the box's dimensions */
+  }
+  
+  .button {
+    background-color: #ff4545; /* Vivid red for emphasis */
+    color: white; /* White text for contrast */
+    font-size: 16px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Capitalize text */
+    padding: 12px 24px; /* Larger padding for a better touch area */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth color transition and transform on click */
+    outline: none; /* Remove outline to enhance appearance */
+  }
+  
+  .button:hover {
+    background-color: #ff6161; /* Lighter red on hover */
+  }
+  
+  .button:active {
+    transform: translateY(4px); /* Press down animation */
+    box-shadow: 0 2px #600; /* Simulate depth */
+  }
+  
+  .escape-box {
+    position: fixed; /* or 'absolute' depending on your layout needs */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to exact center */
+
+    width: 400px; /* or you can set a specific width */
+    z-index: 1000; /* Ensure it's above other elements */
+    /* Add any other styling you need, like background, padding etc. */
+  }
+  
+  
+  .button {
+    position: relative; /* Needed to apply z-index */
+    z-index: 1000; /* High value to be on top */
+    /* Other styles */
+    width: 100%; /* Full width buttons on small screens */
+    padding: 10px; /* Smaller padding */
+  }
+  
+  /* Optionally add media queries to adjust layout on smaller screens */
+  @media (max-width: 600px) {
+    .escape-box {
+      width: 90%; /* Adjust as needed */
+      height: auto;
+      padding: 10px;
+    }
+  
+    .button {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  

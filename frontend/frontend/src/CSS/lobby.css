@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+/* Add this CSS for the error message styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.lobby-background {
+  background-image: url('https://i.pinimg.com/originals/35/ca/40/35ca4003a6f976bd64ce23400552e230.gif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Ensure it takes up the full viewport height */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.lobby-header {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.lobby-name {
+  font-family: 'Creepster', cursive;
+  color: #ff0000;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-shadow:
+    3px 3px 0 rgba(100, 0, 0, 0.5),
+    5px 5px 0 rgba(200, 0, 0, 0.4),
+    7px 7px 0 rgba(255, 0, 0, 0.3),
+    10px 20px 20px rgba(200, 0, 0, 0.5),
+    13px 23px 20px rgba(255, 0, 0, 0.5);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.close-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.lobby-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1; /* Ensure it takes up remaining space */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.lobby-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%; /* Ensure it takes up the full height */
+}
+
+.lobby-containers {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  padding: 20px;
+  margin-top: -20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80%; /* Ensure it doesn't overflow the viewport */
+  overflow-y: auto; /* Enable vertical scroll if content exceeds max height */
+  margin-left: 125px; /* Adjust this value to move it more to the right */
+}
+
+.imposter-controls {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.imposter-count-button {
+  background-color: #c51111;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.imposter-count-button:hover {
+  background-color: #ff1919;
+}
+
+.imposter-count {
+  font-size: 1.2rem;
+  margin: 0 10px; /* Add some margin to separate from the buttons */
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.user-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 5px 0;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 30px);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.start-button {
+  background-color: #c51111;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 0 4px #990000;
+  transition: all 0.2s;
+}
+
+.start-button:hover {
+  background-color: #ff1919;
+}
+
+.start-button:active {
+  box-shadow: 0 2px #990000;
+  transform: translateY(2px);
+}
+
+.plus-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.picture-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+  margin-left: 20px;
+  position: relative; 
+}
+
+.selected-picture {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.picture-menu {
+  position: absolute; 
+  top: 110px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; 
+}
+
+.picture-option {
+  width: 100px;
+  height: 100px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.character {
+  width: 32px;
+  height: 32px;
+}

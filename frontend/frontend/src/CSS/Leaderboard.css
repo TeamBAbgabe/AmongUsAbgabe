@@ -1,0 +1,70 @@
+/* Import the Creepster font */
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+/* Leaderboard.css */
+.leaderboard-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid black;
+    z-index: 1000;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.leaderboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboard-title {
+    font-family: 'Creepster', cursive;
+    color: #ff0000;
+    font-size: 40px; /* Smaller size for the title */
+    letter-spacing: 2px;
+    text-shadow:
+        3px 3px 0 rgba(100, 0, 0, 0.5),
+        5px 5px 0 rgba(200, 0, 0, 0.4),
+        7px 7px 0 rgba(255, 0, 0, 0.3),
+        10px 10px 20px rgba(200, 0, 0, 0.5),
+        13px 13px 20px rgba(255, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.leaderboard-list {
+    width: 100%;
+}
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.leaderboard-name, .leaderboard-wins {
+    font-size: 18px;
+}
+
+.modal-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #cc0000;
+}
+    

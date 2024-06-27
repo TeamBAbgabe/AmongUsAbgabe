@@ -1,0 +1,44 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Set a fixed height */
+  width: 300px; /* Add fixed width */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.message-display-area {
+  flex-grow: 1;
+  overflow-y: auto; /* Make it scrollable */
+  margin-bottom: 10px;
+}
+
+.message {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.chat-input-container {
+  display: flex;
+}
+
+.chat-input {
+  flex-grow: 1;
+  border: 2px solid #888; /* Enhanced visual feedback */
+  padding: 5px;
+  border-radius: 3px;
+  background-color: white; /* Ensure background contrast */
+  max-width: calc(100% - 50px); /* Adjust based on button width to prevent resizing */
+}
+
+.button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+.login-background {
+    background: url('https://www.icegif.com/wp-content/uploads/2023/07/icegif-941.gif');
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.title {
+    font-family: 'Creepster', cursive;
+    font-size: 100px;
+    letter-spacing: 2px;
+    margin-top: -10%;
+    background: linear-gradient(to bottom, #ff0000, #ff0000); 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow:
+      3px 3px 0 rgba(100, 0, 0, 0.5),
+      5px 5px 0 rgba(200, 0, 0, 0.4),
+      7px 7px 0 rgba(255, 0, 0, 0.3),
+      10px 20px 20px rgba(200, 0, 0, 0.5), 
+      13px 23px 20px rgba(255, 0, 0, 0.5); /* Even larger shadow for additional depth */
+    position: relative;
+    margin-bottom: 5px;
+    display: inline-block; /* Necessary for the gradient text effect */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.form-input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.login-button {
+    width: 150px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0000; /* Change to red */
+    color: white;
+    transition: background-color 0.2s; /* Smooth transition for hover effect */
+}
+
+.login-button:hover {
+    background-color: #e60000; /* Slightly darker red on hover */
+}
+
+.login-button:active {
+    background-color: #cc0000; /* Even darker red when button is pressed */
+    box-shadow: 0 2px #990000; /* Adjust shadow to darker red */
+    transform: translateY(2px);
+}
+
+.browser-recommendation {
+    position: absolute;
+    bottom: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5); /* Increased transparency */
+    border-radius: 5px;
+    text-align: center;
+    width: auto;
+    max-width: 90%; /* Prevent the box from being too wide */
+}

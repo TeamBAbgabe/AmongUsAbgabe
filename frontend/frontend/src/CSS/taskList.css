@@ -1,0 +1,31 @@
+.task-list {
+    position: absolute;
+    top: 10%;  /* Adjust this to better position the list, or use 'bottom' */
+    right: 10px;
+    padding: 10px;
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    z-index: 1000; /* Ensures it's on top */
+    width: auto; /* Adjusts to content width */
+    color: #FFFFFF; /* Text color, change as needed for visibility */
+    font-size: 16px; /* Adjust as necessary */
+    box-sizing: border-box;
+    text-align: center; /* Centers all text within the task list */
+}
+
+.task-list h3 {
+    margin: 0; /* Removes top and bottom margins */
+    font-size: 18px; /* Heading size, adjust as needed */
+    width: 100%; /* Ensures the header spans the full width of the task list */
+    padding: 5px 0; /* Adds some padding for spacing */
+}
+
+.task-list p {
+    text-align: left; /* Aligns task descriptions to the left */
+    margin: 5px 0;
+    line-height: 1.4; /* Improves readability */
+}
+.task-completed {
+    color: green;
+  }
+  

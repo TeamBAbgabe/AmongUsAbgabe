@@ -1,0 +1,19 @@
+.map-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 200px;
+    height: 150px;
+    background: rgba(0,0,0,0.5); /* Example background */
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .map-container.maximized {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: auto;
+  }
+  

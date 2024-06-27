@@ -1,0 +1,36 @@
+{
+  "name": "vite-react-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint src && tsc",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "@stomp/stompjs": "^7.0.0",
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.3",
+    "phaser": "^3.80.1",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "sockjs-client": "^1.6.1",
+    "stomp": "^0.1.1",
+    "stompjs": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.1",
+    "vite": "^5.1.4",
+    "vite-plugin-pretty-css-modules": "^0.1.3"
+  }
+}

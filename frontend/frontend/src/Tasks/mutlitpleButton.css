@@ -1,0 +1,63 @@
+.multi-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Adjust as needed */
+  background-color: #f4f4f4;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%; /* Make the grid take up the full width of the container */
+  padding: 0 20px; /* Add some padding on the sides if necessary */
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: #333;
+  padding: 15px; /* Adjust padding to ensure buttons are square */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
+
+.button.active {
+  background-color: #f00; /* Active button color */
+  color: #fff;
+}
+
+.button.disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
